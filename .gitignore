@@ -1,0 +1,23 @@
+# Python-related files
+*.pyc
+__pycache__/
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Docker-related files
+*.log
+docker-compose.override.yml
+
+# Kubernetes-related files
+*.yaml
+
+# TensorFlow SavedModel
+tfx_pipeline/models/saved_model/
+
+# Local environment files
+.env
+.vscode/
+
+
+
