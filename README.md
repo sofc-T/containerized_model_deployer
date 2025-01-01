@@ -9,33 +9,33 @@ The Containerized Model Deployer (CMD) project is designed to build and deploy m
 - **TensorFlow Extended (TFX)**: Manages the machine learning pipeline, including model training, evaluation, and deployment.
 
 ## Project Structure
-containerized-model-deployer/
-├── tfx_pipeline/
-│   ├── __init__.py
-│   ├── data/                # Raw and preprocessed data
-│   │   ├── train_data.csv
-│   │   ├── test_data.csv
-│   ├── components/          # Custom components for the TFX pipeline
-│   │   ├── __init__.py
-│   │   ├── preprocessing.py
-│   │   ├── trainer.py
-│   ├── pipeline/            # TFX pipeline definition
-│   │   ├── __init__.py
-│   │   ├── pipeline.py
-│   ├── models/              # Saved models
-│       ├── saved_model/
-├── docker/
-│   ├── Dockerfile           # Dockerfile to containerize the app
-│   ├── entrypoint.sh        # Entrypoint script for the container
-├── k8s/
-│   ├── deployment.yaml      # Kubernetes deployment configuration
-│   ├── service.yaml         # Kubernetes service configuration
-├── scripts/
-│   ├── build_docker.sh      # Script to build the Docker image
-│   ├── deploy_k8s.sh        # Script to deploy to Kubernetes
-│   ├── test_container.sh    # Script to test the Docker container locally
-├── README.md                # Documentation
-├── .gitignore               # Git ignore file
+containerized-model-deployer/  
+├── tfx_pipeline/  
+│   ├── __init__.py  
+│   ├── data/                # Raw and preprocessed data  
+│   │   ├── train_data.csv  
+│   │   ├── test_data.csv  
+│   ├── components/          # Custom components for the TFX pipeline  
+│   │   ├── __init__.py  
+│   │   ├── preprocessing.py  
+│   │   ├── trainer.py  
+│   ├── pipeline/            # TFX pipeline definition  
+│   │   ├── __init__.py  
+│   │   ├── pipeline.py  
+│   ├── models/              # Saved models  
+│       ├── saved_model/  
+├── docker/  
+│   ├── Dockerfile           # Dockerfile to containerize the app  
+│   ├── entrypoint.sh        # Entrypoint script for the container  
+├── k8s/  
+│   ├── deployment.yaml      # Kubernetes deployment configuration  
+│   ├── service.yaml         # Kubernetes service configuration  
+├── scripts/  
+│   ├── build_docker.sh      # Script to build the Docker image  
+│   ├── deploy_k8s.sh        # Script to deploy to Kubernetes  
+│   ├── test_container.sh    # Script to test the Docker container locally  
+├── README.md                # Documentation  
+├── .gitignore               # Git ignore file  
 
 
 
